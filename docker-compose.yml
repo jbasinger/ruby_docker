@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+  ruby:
+    image: ruby-dev
+    container_name: ruby-dev
+    build: .
+    ports:
+      - 4567:4567
+    volumes:
+      - ./:/usr/src/app
+    command: [ "ruby", "singit.rb" ]

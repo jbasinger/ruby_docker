@@ -1,0 +1,1 @@
+docker run --rm -it -v %CD%:/usr/src/app -p 4567:4567 ruby-dev bash
